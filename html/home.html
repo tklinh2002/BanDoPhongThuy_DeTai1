@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/home.js"></script>
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/trangChu.css" />
+
+    <title>Home</title>
+  </head>
+
+  <body>
+    <!--header && menu-->
+    <div class="container px-0">
+      <header>
+        <div class="header1">
+          <div style="clear: both">
+            <img class="rounded-circle w-25" src="../img/logoshop.png" alt="" />
+            <h1>Nhóm 41</h1>
+          </div>
+          <h6>ĐEM THỊNH VƯỢNG ĐẾN MỌI NHÀ</h6>
+        </div>
+        <div class="header2">
+          <h1>SHOP BÁN ĐỒ PHONG THỦY</h1>
+        </div>
+        <div class="header3">
+          <div>
+            <form action="" class="form-horizontal">
+              <input
+                type="text"
+                name=""
+                id=""
+                class="form-control mb-2"
+                placeholder="tài khoản"
+              />
+              <input
+                type="password"
+                name=""
+                id=""
+                class="form-control"
+                placeholder="password"
+              />
+            </form>
+            <button type="button" class="btn btn-primary me-2">Đăng nhập</button>
+            <button type="button" class="btn btn-primary"><a class="text-light text-decoration-none" href="../html/regist.html">Đăng ký</a></button>
+            <div class="row">
+              <div class="">
+                <a href="../html/gioHang.html">
+                  <img
+                  class="mt-3"
+                  id="giohang"
+                  src="../img/giohang.png"
+                  alt=""
+                />
+                </a>
+                <span
+                  id="giohang"
+                  style="color: white; font-size: 30px; list-style: 100px"
+                  >(0)</span
+                >
+                <a href="../html/thanhToan.html"><button type="button" class="btn btn-primary ms-4">Thanh toán</button></a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- menu-->
+      <nav
+        class="navbar navbar-expand-sm navbar-dark bg-info"
+        id="scrollspy"
+        style="
+          position: relative;
+          top: 0;
+          right: 0;
+          left: 0;
+          z-index: 1050;
+          width: 1319px;
+        "
+      >
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="nav navbar-nav" id="menu1">
+              <li class="nav-item">
+                <a href="../html/home.html" class="nav-link">Home</a>
+              </li>
+              <li class="dropdown">
+                <a
+                  href="../html/sanPham.html"
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Sản phẩm
+                </a>
+                <ul
+                  style="background-color: rgb(0, 0, 0)"
+                  class="dropdown-menu"
+                >
+                  <li><a href="../html/sanPham.html#section1" class="nav-link">Vòng tay</a></li>
+                  <li><a href="../html/sanPham.html#section2" class="nav-link">Dây chuyền</a></li>
+                  <li><a href="../html/sanPham.html#section3" class="nav-link">Đá quý</a></li>
+              
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="../html/KhuyenMai.html" class="nav-link">Khuyến mãi</a>
+              </li>
+              <li class="nav-item">
+                <a href="../html/news.html" class="nav-link">Tin tức & sự kiện</a>
+              </li>
+              <li class="nav-item">
+                <a href="../html/info.html" class="nav-link">Giới thiệu</a>
+              </li>
+              <li class="nav-item"><a href="../html/lienHe.html" class="nav-link">Liên hệ</a></li>
+              <li class="nav-item"><a href="../html/sitemap.html" class="nav-link">SiteMap</a></li>
+            </ul>
+            <div class="nav-item">
+              <input
+                class="form-control"
+                style="float: left; width: 300px"
+                type="search"
+                placeholder="Nhập"
+              />
+              <button
+                class="btn btn-success mx-1"
+                style="float: left"
+                type="submit"
+              >
+                Tìm Kiếm
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="mar">
+        <h5>
+          <span itemscope>
+            <a href="../html/home.html">Home</a> 
+        </span>
+        </h5>
+        
+    </div>
+    </div>
+
+    <!-- carousel-->
+    <div class="container body px-0">
+      <div
+        id="myCarousel"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/banner11-2.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="../img/banner2-3.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- img phát lộc tín-->
+    <div class="container px-0">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="../img/phat.jpg" class="rounded mx-auto d-block" alt="" />
+        </div>
+        <div class="col-md-4">
+          <img src="../img/tin.jpg" class="rounded mx-auto d-block" alt="" />
+        </div>
+        <div class="col-md-4">
+          <img src="../img/loc.jpg" class="rounded mx-auto d-block" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- nút mũi tên-->
+    <div class="muiTen fixed-bottom">
+      <a href="#sec"
+        ><img src="../img/muiTen.jpeg" style="width: 5%; height: 5%" alt=""
+      /></a>
+    </div>
+    <!-- hotline-->
+    <div div class="hotline">
+      <img
+        src="../img/hotline.jpeg"
+        style="height: 70px; float: right"
+        class="rounded-circle"
+        alt=""
+      />
+      <div class="bg-danger" id="soHotline">
+        <p class="float-end text-light">0961613087</p>
+      </div>
+    </div>
+
+    <!-- body-->
+    <div class="container px-0" id="sec">
+      <div class="row">
+        <!-- aside-->
+        <div class="col-3">
+          <div class="row">
+            <div style="height: 65px"></div>
+          </div>
+          <div
+            class="aside1"
+            data-bs-spy="scroll"
+            data-bs-target=".navbar"
+            data-bs-offset="50"
+            style="position: relative"
+          >
+            <nav
+              class="navbar navbar-sm navbar-dark"
+              id="aside2"
+              style="background-color: rgb(240, 237, 218)"
+            >
+              <div class="container">
+                <ul class="navbar-nav">
+                  <li class="nav-item justify-content-center" id="navDanhMuc">
+                    <h5 class="text-center">DANH MỤC SẢN PHẨM</h5>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#section1">Sản phẩm bán chạy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#section2">Vật phẩm tài lộc</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#section3">Vòng tay phong thủy</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="row">
+            <div class="col-11 text-center" id="tbsale">
+              <h1 style="font-size: 150px; padding-top: 200px">Sale</h1>
+              <p style="font-size: 50px; padding-top: 50px; font-weight: bold">
+                Mùa hè bùng nổ ưu đãi bất ngờ!!!
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- sec1-->
+        <div class="col-9">
+          <div
+            id="section1"
+            class="container-fluid bg-info text-white"
+            style="padding: 70px 20px 20px 20px"
+          >
+            <div class="row">
+              <h5 style="color: brown"><u>SẢN PHẨM BÁN CHẠY</u></h5>
+            </div>
+            <div class="row py-1">
+              <div class="col-3">
+                <div class="card" style="width: 12rem">
+                  <img
+                    src="../img/ho-lo-phong-thuy_1.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center text-black-50">
+                      Hồ lô phong thủy
+                    </h5>
+                    <p class="card-text text-danger text-center">950,000đ</p>
+                    <a href="#" class="btn btn-outline-primary"
+                      >Thêm vào giỏ hàng
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card" style="width: 12rem">
+                  <img
+                    src="../img/da-mat-ho-vang-nau_1_-400x400.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center text-black-50">
+                      Đá mắt hổ vàng nâu
+                    </h5>
+                    <p class="card-text text-danger text-center">1,000,000đ</p>
+                    <a href="#" class="btn btn-outline-primary"
+                      >Thêm vào giỏ hàng
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card" style="width: 12rem">
+                  <img
+                    src="../img/nguaPhongThuy.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center text-black-50">
+                      Ngựa phong thủy
+                    </h5>
+                    <p class="card-text text-danger text-center">800,000đ</p>
+                    <a href="#" class="btn btn-outline-primary"
+                      >Thêm vào giỏ hàng
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card" style="width: 12rem">
+                  <img
+                    src="../img/S6818-chuoi-ma-nao-ty-huu-10li-01-150x150.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center text-black-50">
+                      Chuỗi mã não tỳ hưu
+                    </h5>
+                    <p class="card-text text-danger text-center">1,050,000đ</p>
+                    <a href="#" class="btn btn-outline-primary"
+                      >Thêm vào giỏ hàng
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <!--sec2-->
+          <div
+            id="section2"
+            class="container-fluid bg-info text-white"
+            style="padding: 70px 20px 20px 20px"
+          >
+            <div class="row">
+              <h5 style="color: brown"><u>VẬT PHẨM TÀI LỘC</u></h5>
+            </div>
+            <div class="row py-1">
+              <div class="col-3">
+                <div class="card" style="width: 12rem">
+                  <img
+                    src="../img/ho-lo-phong-thuy_1.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center text-black-50">
+                      Hồ lô phong thủy
+                    </h5>
+                    <p class="card-text text-danger text-center">950,000đ</p>
+                    <a href="#" class="btn btn-outline-primary"
+                      >Thêm vào giỏ hàng
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card" style="width: 12rem">
+                  <img
+                    src="../img/vat-pham-phong-thuy-tam-duong-khai-thai-mau-ngoc-bich-1-400x400.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center text-black-50">
+                      Tam dương ngọc bích
+                    </h5>
+                    <p class="card-text text-danger text-center">1,000,000đ</p>
+                    <a href="#" class="btn btn-outline-primary"
+                      >Thêm vào giỏ hàng
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card" style="width: 12rem">
+                  <img
+                    src="../img/nguaPhongThuy.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center text-black-50">
+                      Ngựa phong thủy
+                    </h5>
+                    <p class="card-text text-danger text-center">800,000đ</p>
+                    <a href="#" class="btn btn-outline-primary"
+                      >Thêm vào giỏ hàng
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card" style="width: 12rem">
+                  <img
+                    src="../img/vong4.jpeg"
+                    style="width: 190px; height: 190px"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center text-black-50">
+                      Vòng tay đá Diopside
+                    </h5>
+                    <p class="card-text text-danger text-center">1,050,000đ</p>
+                    <a href="#" class="btn btn-outline-primary"
+                      >Thêm vào giỏ hàng
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <!--sec3-->
+          <div
+            id="section3"
+            class="container-fluid bg-info text-white"
+            style="padding: 70px 20px 20px 20px"
+          >
+            <div class="row">
+              <h5 style="color: brown"><u>VÒNG TAY PHONG THỦY</u></h5>
+            </div>
+            <div class="row py-1">
+              <div class="col-3">
+                <div class="card" style="width: 12rem">
+                  <img
+                    src="../img/vong-da-t_637143827409045468.jpg"
+                    style="width: 190px; height: 190px"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center text-black-50">
+                      Vòng đất xanh phong thủy
+                    </h5>
+                    <p class="card-text text-danger text-center">950,000đ</p>
+                    <a href="#" class="btn btn-outline-primary"
+                      >Thêm vào giỏ hàng
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card" style="width: 12rem">
+                  <img
+                    src="../img/da-mat-ho-vang-nau_1_-400x400.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center text-black-50">
+                      Đá mắt hổ vàng nâu
+                    </h5>
+                    <p class="card-text text-danger text-center">1,000,000đ</p>
+                    <a href="#" class="btn btn-outline-primary"
+                      >Thêm vào giỏ hàng
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card" style="width: 12rem">
+                  <img
+                    src="../img/vong-tay-go-tram-huong-ho-soc_2__2-400x400.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center text-black-50">
+                      vòng tay gỗ trầm hương hổ sọc
+                    </h5>
+                    <p class="card-text text-danger text-center">800,000đ</p>
+                    <a href="#" class="btn btn-outline-primary"
+                      >Thêm vào giỏ hàng
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card" style="width: 12rem">
+                  <img
+                    src="../img/S6818-chuoi-ma-nao-ty-huu-10li-01-150x150.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center text-black-50">
+                      Chuỗi mã não tỳ hưu
+                    </h5>
+                    <p class="card-text text-danger text-center">1,050,000đ</p>
+                    <a href="#" class="btn btn-outline-primary"
+                      >Thêm vào giỏ hàng
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container footer" style="background-color: khaki">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 address-w3l-right text-center">
+          <div class="address-gried">
+            <span class="fa-map"></span>
+            <p>Đại học Công Nghiệp THành Phố Hồ Chí Minh</p>
+          </div>
+          <div class="address-gried mt-3">
+            <span class="fas fa-phone-volume"></span>
+            <p>+(84) 356 153 236</p>
+          </div>
+          <div class="address-gried mt-3">
+            <span class="far fa-envelope"></span>
+            <p>
+              <a href="mailto:info@example.com"
+                >20065731.linh@student.iuh.edu.vn</a
+              >
+              <br /><a href="mailto:info@example.com">KhoaBugs@gmail.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container footer" style="background-color: aqua">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 address-w3l-right text-center">
+          <div class="address-gried">
+            <span class="fa-map"></span>
+            <p><b>Designed by Trần Khánh Linh & Hồ Nguyễn Đăng Khoa</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script> 
+    $(document).ready(function(){
+      $(".hotline>img").click(function(){
+        $("#soHotline").fadeToggle("slow");
+      });
+    });
+    </script>
+</html>

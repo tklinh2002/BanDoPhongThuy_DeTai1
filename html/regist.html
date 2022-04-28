@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/regist.js"></script>
+    <title>Đăng ký</title>
+    
+    <style>
+      .container {
+        background-color: aqua;
+        
+        border: 1px solid black;
+        box-shadow: 3px 10px 5px black;
+      }
+      .btn {
+        box-shadow: 3px 3px 5px greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row ">
+      <div class="_login_page" onclick="window.location.href='../html/home.html'">
+        <a href="../html/home.html"><img src="../img/logoshop.png" class="rounded-circle" alt="logo"></a>
+        <span class="_nhom">Nhóm 41</span>
+    </div>
+    </div>
+    <div class="container" style="width: 650px;
+    height: 750px;">
+        
+      <div class="row mt-1 mb-1">
+        <div class="col-12 text-center">
+          <h1>ĐĂNG KÝ TÀI KHOẢN</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 text-end">
+          <label for="txtDN">Tên đăng nhập:</label>
+        </div>
+        <div class="col-7">
+          <input
+            type="text"
+            name=""
+            id="txtDN"
+            class="form-control"
+            placeholder="ten dang nhap"
+          />
+          <span id="spDN" class="text-danger">*</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4 text-end">
+          <label for="txtMK">Mật khẩu:</label>
+        </div>
+        <div class="col-7">
+          <input
+            type="password"
+            name=""
+            id="txtMK"
+            class="form-control"
+            placeholder="Mật khẩu"
+          />
+
+          <span id="spMK" class="text-danger">*</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4 text-end">
+          <label for="txtNLMK">Nhập lại mật khẩu:</label>
+        </div>
+        <div class="col-7">
+          <input
+            type="password"
+            name=""
+            id="txtNLMK"
+            class="form-control"
+            placeholder="Nhập lại mật khẩu"
+          />
+          <span id="spNLMK" class="text-danger">*</span>
+        </div>
+      </div>
+
+      <div class="row mt-2">
+        <div class="col-12 text-center">
+          <h1>THÔNG TIN CÁ NHÂN</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4 text-end">
+          <label for="txtHT">Họ tên:</label>
+        </div>
+        <div class="col-7">
+          <input
+            type="text"
+            name=""
+            id="txtHT"
+            class="form-control"
+            placeholder="Họ tên"
+          />
+          <span id="spHT" class="text-danger">*</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4 text-end">
+          <label for="txtNS">Ngày sinh:</label>
+        </div>
+        <div class="col-7">
+          <input
+            type="date"
+            id="txtNS"
+            class="form-control"
+            style="width: 180px"
+          />
+          <span id="spNS" class="text-danger">*</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4 text-end">
+          <label for="txtGioiTinh">Giới tính:</label>
+        </div>
+        <div class="col-7">
+          <label for="">Nam:</label>
+          <input type="radio" name="gioitinh" id="gt" checked value="Nam"/>
+          <label for="">Nữ:</label>
+          <input type="radio" name="gioitinh" id="gt" value="Nữ"/>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4 text-end">
+          <label for="txtDC">Địa chỉ:</label>
+        </div>
+        <div class="col-7">
+          <input
+            type="text"
+            name=""
+            id="txtDC"
+            class="form-control"
+            placeholder="Nhập địa chỉ"
+          />
+          <span id="spDC" class="text-danger">*</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4 text-end">
+          <label for="txtDT">Điện thoại:</label>
+        </div>
+        <div class="col-7">
+          <input
+            type="text"
+            name=""
+            id="txtDT"
+            class="form-control"
+            placeholder="Nhập điện thoại"
+          />
+
+          <span id="spDT" class="text-danger">*</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4 text-end">
+          <label for="txtMail">Email:</label>
+        </div>
+        <div class="col-7">
+          <input
+            type="text"
+            name=""
+            id="txtMail"
+            class="form-control"
+            placeholder="Email"
+            onblur="kiemTraEmail()"
+          />
+          <span id="spMail" class="text-danger">*</span>
+        </div>
+        
+          
+       
+      </div>
+
+      <div class="row mt-2">
+        <div class="col-12 text-center">
+          <button type="button" id="btnDK" class="btn btn-warning">
+            Đăng ký
+          </button>
+        </div>
+      </div>
+
+      <div class="row mt-2">
+          <div class="col-12 text-center">
+            <a href="../html/login.html">Nếu đã có tài khoản đăng nhập tại đây!!</a>
+          </div>
+      </div>
+    </div>
+    <div class="row ms-1">
+      <table class="table table-striped">
+          <thead>
+            <th>
+              <tr>
+                <td>STT</td>
+                <td>Tên đăng nhập</td>
+                <td>Họ tên</td>
+                <td>Ngày sinh</td>
+                <td>Giới tính</td>
+                <td>Địa chỉ</td>
+                <td>Điện thoại</td>
+                <td>Email</td>
+              </tr>
+            </th>
+          </thead>
+          <tbody id="tbody">
+            
+          </tbody>
+      </table>
+    </div>
+  </body>
+</html>

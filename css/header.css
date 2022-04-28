@@ -1,0 +1,147 @@
+* {
+  margin: auto;
+  padding: 0px;
+}
+.container {
+  border: 1px solid black;
+}
+header {
+  width: 100%;
+  height: 220px;
+  border-bottom: 1px solid black;
+  background-color: black;
+}
+.header1 {
+  height: 220px;
+  width: 500px;
+  float: left;
+}
+.header1 > img {
+  float: left;
+}
+.header1 > div > h1 {
+  float: right;
+  margin: 40px 0px 0px 0px;
+  width: 290px;
+  font-size: 60px;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+.header1 > h6 {
+  margin-left: 15px;
+  margin-top: 20px;
+  font-size: 20px;
+  border: 3px solid white;
+  border-radius: 30px;
+  width: 400px;
+  text-align: center;
+  color: white;
+  animation: bder 1s ease-in-out infinite alternate;
+}
+@keyframes bder {
+  from {
+    border-color: yellow;
+  }
+  to {
+    border-color: red;
+  }
+}
+.header2 {
+  height: 220px;
+  width: 520px;
+  border: 1px solid black;
+  float: left;
+}
+.header2 > h1 {
+  font-size: 70px;
+  text-align: left;
+  font-style: italic;
+  line-height: 100px;
+  color: white;
+  animation: logo 1s ease-in-out infinite alternate;
+}
+@keyframes logo {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+.header3 {
+  float: right;
+  height: 220px;
+  width: 250px;
+  margin: 0px;
+}
+.header3 > div > button {
+  width: 110px;
+  margin-top: 20px;
+  height: 40px;
+  float: left;
+}
+.header3 > div {
+  margin-top: 10px;
+}
+#menu1 > li > a {
+  font-size: 20px;
+  color: black;
+}
+#menu1 > li {
+  margin-left: 15px;
+}
+#menu1 > li :hover {
+  background-color: #ff4da6;
+}
+.dropdown-menu > li {
+  text-align: center;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+#giohang {
+  width: 50px;
+  height: 50px;
+}
+
+#giohang:hover {
+  width: 52px;
+  height: 52px;
+}
+#aside2 {
+  margin-left: 30px;
+}
+#aside2 li {
+  line-height: 80px;
+}
+#aside2 li a {
+  line-height: 80px;
+  color: black;
+  font-weight: bold;
+}
+#aside2 li a:hover {
+  color: blue;
+}
+.hotline {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1030;
+  width: 200px;
+}
+#soHotline {
+  height: 70px;
+  line-height: 70px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 50px;
+  display:none
+}
+.hotline>img:hover{
+  transform: rotate(180deg);
+  transition: ease-in-out 1s;
+}
